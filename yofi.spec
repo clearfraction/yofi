@@ -24,7 +24,7 @@ cargo build --release --locked --offline
 
 
 %install
-install -D -m755 target/release/yofi %{buildroot}/usr/bin/swww
+install -D -m755 target/release/yofi %{buildroot}/usr/bin/yofi
 strip --strip-debug %{buildroot}/usr/bin/yofi
 
 %files
