@@ -1,8 +1,8 @@
 Name:           onagre
 Version:        %(unset https_proxy && curl -s https://api.github.com/repos/onagre-launcher/onagre/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 Release:        1
-URL:            https://github.com/l4l/yofi
-Source0:        https://github.com/l4l/yofi/archive/refs/tags/%{version}.tar.gz
+URL:            https://github.com/onagre-launcher/onagre
+Source0:        https://github.com/onagre-launcher/onagre/archive/refs/tags/%{version}.tar.gz
 Summary:        General purpose application launcher for X and Wayland inspired by Rofi/Wofi and Alfred
 License:        MIT
 BuildRequires:  rustc
