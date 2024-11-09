@@ -2,7 +2,7 @@ Name:           yofi
 Version:        %(unset https_proxy && curl -s https://api.github.com/repos/l4l/yofi/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 Release:        1
 URL:            https://github.com/l4l/yofi
-Source0:        https://github.com/l4l/yofi/archive/refs/tags/%{version}.tar.gz
+Source0:        https://github.com/l4l/yofi/archive/refs/tags/master.tar.gz
 Summary:        Minimalistic menu for Wayland-based compositors.
 License:        GPLv3
 BuildRequires:  rustc
@@ -14,7 +14,7 @@ BuildRequires:  lz4-dev
 minimalistic menu for Wayland-based compositors.
 
 %prep
-%setup -q -n yofi-%{version}
+%setup -q -n yofi-master
 cargo fetch --locked
 
 
